@@ -1,0 +1,197 @@
+:root {
+    --white: white;
+    --red: red;
+    --darkRed: rgb(206, 12, 12);
+    --green: #d7fde5;
+    --blue: lightblue 26%;
+    --curlyFront: 'Twinkle Star', cursive;
+    --creamShadow: burlywood;
+    --chocolateBG: linear-gradient(chocolate, rgb(95, 0, 0));
+}
+
+/* font-family: 'Berkshire Swash', cursive;
+font-family: 'Princess Sofia', cursive;
+font-family: 'Twinkle Star', cursive;
+*/
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: repeating-linear-gradient(
+        to right,
+        var(--white) 40px, 
+        var(--white) 60px, 
+        var(--red) 60px, 
+        var(--red) 80px, 
+        var(--white) 80px, 
+        var(--white) 100px, 
+        var(--green) 100px, 
+        var(--green) 120px
+      );
+}
+
+/* NAV */
+.scallop {
+    position:relative;
+    background: var(--white);
+    padding: 50px;
+}
+
+/* TITLE  */
+.scallop h1 {
+    position: relative;
+    text-align: center;
+    color: var(--red);
+    font-family: var(--curlyFront);
+    font-weight: 500;
+    font-size: 80px;
+    text-shadow: 0 1px 3px var(--red);
+}
+
+/* SCALLOP DESIGN */
+.scallop::after { 
+    position: absolute;
+    bottom: -40px;
+    left: 0px;
+    width: 100%;
+    content: " "; 
+    background: 
+    radial-gradient(circle at 50% 0%, var(--white) 25%, var(--blue), transparent 40%);
+    background-size: 50px 100px;
+    height: 50px;
+    background-repeat: repeat-x;
+}
+
+/* BACKGROUND */
+.spaceContainer {
+    padding:50px;
+}
+
+/* MAIN CONTAINER */
+.main {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--creamShadow);
+    padding: 20px;
+
+}
+
+/* NEW COOKIE CONTAINER */
+.newCookie {
+    padding-right: 
+}
+
+/* TEXT */
+h2 {
+    font-family: var(--curlyFront);
+    color: var(--red);
+}
+
+label {
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.fancyFont {
+    font-family: 'Twinkle Star', cursive;
+}
+
+
+/* MAIN BUTTON */
+btn {
+    background: var(--white);
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin: 2px;
+    color: var(--red);
+    font-weight: 500;
+}
+
+btn:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+/* BASE BUTTONS */
+#chocBase {
+    background: var(--chocolateBG);
+    color: rgb(249, 208, 159);
+    
+}
+
+#sugarBase {
+    background: linear-gradient(rgb(255, 229, 196), rgb(255, 174, 75));
+    color: rgb(189, 85, 11);
+}
+
+#peppBase {
+    background: linear-gradient(var(--darkRed), var(--red));
+    color: var(--white);
+}
+
+/* FROSTING BUTTONS */
+.frostingBtnShape {
+    width: 50px;
+    height: 50px;
+    border-radius: 0% 50% 50% 50%;
+    margin: 10px;
+}
+
+#fudgeFrost {
+    background: var(--chocolateBG);
+}
+
+#butterCreamFrost {
+    background: linear-gradient(rgb(255, 241, 187), rgb(255, 224, 102));
+}
+
+#strawbFrost {
+    background: linear-gradient(rgb(255, 159, 175), red);
+}
+
+#orangeFrost {
+    background: linear-gradient(rgb(255, 231, 96), rgb(255, 166, 2));
+}
+
+#mintFrost {
+    background: linear-gradient(var(--green), rgb(90, 255, 170));
+}
+
+#cottonCandyFrost {
+    background: linear-gradient(rgb(254, 142, 160), rgb(0, 225, 255));
+}
+
+#mixedBerryFrost {
+    background: linear-gradient(rgb(114, 107, 255), rgb(184, 80, 184));
+}
+
+/* SPRINKLE BUTTONS */
+.sprinkBtn {
+    background: transparent;
+    box-shadow: 0 0 5px var(--creamShadow);
+}
+
+/* COOKIE PREVIEW */
+#cookiePreviewBox {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.cookieImgSize {
+    height: 75%;
+    width: 75%;
+}
+
+/* HIDE CLASS */
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 991px) {
+    .newCookie {
+        text-align: center;
+    }
+    
+}
