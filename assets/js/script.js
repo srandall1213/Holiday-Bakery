@@ -1,9 +1,9 @@
 const chocBaseBtn = document.getElementById("chocBase");
 const sugarBaseBtn = document.getElementById("sugarBase");
 const peppBaseBtn = document.getElementById("peppBase");
-const chocBaseImg = "./images/chocCookie.png";
-const sugBaseImg = "./images/sugCookie.png";
-const peppBaseImg = "./images/peppCookie.png";
+const chocBaseImg = "./assets/images/chocCookie.png";
+const sugBaseImg = "./assets/images/sugCookie.png";
+const peppBaseImg = "./assets/images/peppCookie.png";
 
 function getCookieBase(imgPath) {
     const cookiePreview = document.getElementById("cookiePreviewBox");
