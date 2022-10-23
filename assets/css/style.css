@@ -9,11 +9,6 @@
     --chocolateBG: linear-gradient(chocolate, rgb(95, 0, 0));
 }
 
-/* font-family: 'Berkshire Swash', cursive;
-font-family: 'Princess Sofia', cursive;
-font-family: 'Twinkle Star', cursive;
-*/
-
 body, html {
     width: 100%;
     height: 100%;
@@ -78,11 +73,6 @@ body, html {
 
 }
 
-/* NEW COOKIE CONTAINER */
-.newCookie {
-    padding-right: 
-}
-
 /* TEXT */
 h2 {
     font-family: var(--curlyFront);
@@ -100,16 +90,17 @@ label {
 
 
 /* MAIN BUTTON */
-btn {
+button {
     background: var(--white);
     border-radius: 5px;
     padding: 8px 15px;
-    margin: 2px;
+    margin: 10px;
     color: var(--red);
     font-weight: 500;
+    border: none;
 }
 
-btn:hover {
+button:hover {
     cursor: pointer;
     opacity: 80%;
 }
@@ -118,17 +109,26 @@ btn:hover {
 #chocBase {
     background: var(--chocolateBG);
     color: rgb(249, 208, 159);
-    
+    width: 25%;  
+    text-align: center;
+    font-size: 1vw;
 }
 
 #sugarBase {
     background: linear-gradient(rgb(255, 229, 196), rgb(255, 174, 75));
     color: rgb(189, 85, 11);
+    width: 25%;  
+    text-align: center;
+    font-size: 1vw;
+ 
 }
 
 #peppBase {
     background: linear-gradient(var(--darkRed), var(--red));
     color: var(--white);
+    width: 25%;  
+    text-align: center;
+    font-size: 1vw;
 }
 
 /* FROSTING BUTTONS */
@@ -143,45 +143,66 @@ btn:hover {
     background: var(--chocolateBG);
 }
 
-#butterCreamFrost {
+#creamCheeseFrost {
     background: linear-gradient(rgb(255, 241, 187), rgb(255, 224, 102));
 }
 
-#strawbFrost {
-    background: linear-gradient(rgb(255, 159, 175), red);
+#doodleFrost {
+    background: linear-gradient(rgb(255, 224, 102), chocolate);
 }
 
-#orangeFrost {
-    background: linear-gradient(rgb(255, 231, 96), rgb(255, 166, 2));
-}
-
-#mintFrost {
-    background: linear-gradient(var(--green), rgb(90, 255, 170));
-}
-
-#cottonCandyFrost {
-    background: linear-gradient(rgb(254, 142, 160), rgb(0, 225, 255));
-}
-
-#mixedBerryFrost {
-    background: linear-gradient(rgb(114, 107, 255), rgb(184, 80, 184));
-}
 
 /* SPRINKLE BUTTONS */
 .sprinkBtn {
     background: transparent;
     box-shadow: 0 0 5px var(--creamShadow);
+    width: 25%;
+    text-align: center;
 }
 
-/* COOKIE PREVIEW */
-#cookiePreviewBox {
+/* PREVIEW BOX */
+#previewBox {
+    position: relative;
+}
+
+/* COOKIE BOX */
+#cookieBox {
     text-align: center;
-    padding-bottom: 15px;
+    position: absolute;
+    width: 100%;
 }
 
 .cookieImgSize {
     height: 75%;
     width: 75%;
+}
+
+/* FROSTING BOX */
+#frostingBox {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+.frostingImgSize {
+    padding-top: 3%;
+    height: 70%;
+    width: 70%;
+}
+
+/* SPINKLE BOX */
+#sprinkleBox {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+.sprinkleImgSize {
+    margin-top: 13px;
+    padding: 20px;
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
 }
 
 /* HIDE CLASS */
@@ -192,6 +213,6 @@ btn:hover {
 @media only screen and (max-width: 991px) {
     .newCookie {
         text-align: center;
+        align-items: center;
     }
-    
 }

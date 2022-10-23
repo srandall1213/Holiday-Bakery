@@ -6,13 +6,13 @@ const sugBaseImg = "./assets/images/sugCookie.png";
 const peppBaseImg = "./assets/images/peppCookie.png";
 
 function getCookieBase(imgPath) {
-    const cookiePreview = document.getElementById("cookiePreviewBox");
-    cookiePreview.innerHTML = '';
+    const cookieBox = document.getElementById("cookieBox");
+    cookieBox.innerHTML = '';
 
     const cookieImg = document.createElement("img");
     cookieImg.setAttribute("src", imgPath);
     cookieImg.classList.add("cookieImgSize");
-    cookiePreview.append(cookieImg);
+    cookieBox.append(cookieImg);
 
     console.log("cookie generated");
 }

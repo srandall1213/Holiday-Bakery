@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Santa Village Bakery</title>
+    <title>🎅 Santa's Village Bakery</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -36,49 +36,49 @@
                     </div>
                     <div class="form-group pb-3">
                         <label for="base">Cookie Flavor:</label>
-                        <div class="container">
-                            <btn id="chocBase">Chocolate</btn>
-                            <btn id="sugarBase">Sugar</btn>
-                            <btn id="peppBase">Peppermint</btn>
+                        <div class="container d-flex flex-wrap justify-content-around col-12">
+                            <button type="button" id="chocBase">Chocolate</button>
+                            <button type="button" id="sugarBase">Sugar</button>
+                            <button type="button" id="peppBase">Peppermint</button>
                         </div>
                     </div>
                     <div class="form-group pb-3">
                         <label for="frosting">Frosting:</label>
-                        <div class="container">
-                            <btn class="frostingBtnShape"id="fudgeFrost"></btn>
-                            <btn class="frostingBtnShape" id="butterCreamFrost"></btn>
-                            <btn class="frostingBtnShape" id="strawbFrost"></btn>
-                            <btn class="frostingBtnShape" id="orangeFrost"></btn>
-                            <btn class="frostingBtnShape" id="mintFrost"></btn>
-                            <btn class="frostingBtnShape" id="cottonCandyFrost"></btn>
-                            <btn class="frostingBtnShape" id="mixedBerryFrost"></btn> 
+                        <div class="container d-flex flex-wrap justify-content-around">
+                            <button type="button" class="frostingBtnShape" id="fudgeFrost"></button>
+                            <button type="button" class="frostingBtnShape" id="creamCheeseFrost"></button>
+                            <button type="button" class="frostingBtnShape" id="doodleFrost"></button>
                         </div>
                     </div>
                     <div class="form-group pb-3">
                         <label for="sprinkles">Sprinkles:</label>
-                        <div class="container">
-                            <btn class="sprinkBtn" id="snowSprink">❄️☃️</btn>
-                            <btn class="sprinkBtn" id="santaSprink">🎅🦌</btn>
-                            <btn class="sprinkBtn" id="treeSprink">🎄🎁</btn>
+                        <div class="container d-flex flex-wrap justify-content-around">
+                            <button type="button" class="sprinkBtn" id="snowSprink">❄️</button>
+                            <button type="button" class="sprinkBtn" id="treeSprink">🎄</button>
+                            <button type="button" class="sprinkBtn" id="candySprink">🍬</button>
                         </div>
                     </div>
                 </form>
             </div>
             <!-- right column -->
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6" id="previewBox">
                 <p class="fancyFont pt-3">Preview:</p>
-                <div id="cookiePreviewBox"></div>
+                <div id="cookieBox"></div>
+                <div id="frostingBox"></div>
+                <div id="sprinkleBox"></div>
             </div>
         </div>
         <div class="pt-3">
-            <btn id="saveCookie">ADD TO COOKIE SHEET &#x2192;</btn>
+            <button type="button" id="saveCookie">ADD TO COOKIE SHEET &#x2192;</button>
         </div>
     </div>
 </div>
 
 
     <!-- Optional JavaScript -->
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/cookieBase.js"></script>
+    <script src="./assets/js/frosting.js"></script>
+    <script src="./assets/js/sprinkles.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
