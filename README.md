@@ -1,7 +1,16 @@
 # Holiday-Bakery
-deployed link: https://srandall1213.github.io/Holiday-Bakery/
 
-Sources:
+## Description
+Personal project that I'm working on for the holidays - decorate a christmas cookie!  
+
+## Website Appearance
+
+![Holiday-Bakery](./assets/images/screenshot.png)
+
+## Deployed Link
+https://srandall1213.github.io/Holiday-Bakery/
+
+## Credits
 
 <!-- cookies -->
 
