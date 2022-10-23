@@ -1,4 +1,8 @@
 # Holiday-Bakery
+deployed link: https://srandall1213.github.io/Holiday-Bakery/
+
+Sources:
+
 <!-- cookies -->
 
 chocolate cookie image
