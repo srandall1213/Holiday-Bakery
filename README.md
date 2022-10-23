@@ -5,7 +5,7 @@ Personal project that I'm working on for the holidays - decorate a christmas coo
 
 ## Website Appearance
 
-![Holiday-Bakery](./assets/images/screenshot.png)
+![Holiday-Bakery](./assets/images/screenshot.jpg)
 
 ## Deployed Link
 https://srandall1213.github.io/Holiday-Bakery/
